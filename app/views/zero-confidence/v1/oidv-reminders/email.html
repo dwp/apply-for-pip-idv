@@ -1,0 +1,105 @@
+{% extends "layouts/emailv2.html" %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full reminders-nav">
+
+      <nav>
+        <ul class="govuk-list">
+          <li>
+            <span>Email</span>
+          </li>
+          <li>
+            <a href="text" class="govuk-button">Text</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-container-centred govuk-email-container">
+
+      {{ govukHeader({
+        homepageUrl: "#"
+      }) }}
+
+      <div class="govuk-width-container govuk-email-content">
+
+        <p>Dear Jerry Bakewell,</p>
+
+        <p>Confirm your identity for your Personal Independence Payment (PIP) claim.</p>
+
+        <p>There is no deadline to confirm your identity but it’s important you do, so that we can pay you straight away if your claim is successful. We check everyone's identity to protect from fraud.</p>
+
+        <h2 class="govuk-heading-m">Confirm your identity online</h2>
+
+        <p>You will need your email address, mobile phone and password to sign in to PIP. You will not need to answer the questions about your daily living activities or mobility again.</p>
+
+        <p>
+          <a href="">https://www.apply-for-pip.dwp.gov.uk/authenticate</a>
+        </p>
+
+        <h2 class="govuk-heading-m">If you cannot confirm your identity online</h2>
+
+        <p>You can call us instead.</p>
+
+        <p>You’ll need to give some details about yourself, for example:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your name</li>
+          <li>your National Insurance number, if you have one (you can find this on letters about tax, pensions and benefits)</li>
+          <li>your date of birth</li>
+          <li>your address</li>
+        </ul>
+
+        <p>You’ll also need to answer some questions about yourself or events in your life, so that we can confirm your identity.</p>
+
+        <p>
+          Telephone: 0800 171 2169<br>
+          Textphone: 0800 121 4493 if you have speech or hearing difficulties
+        </p>
+
+        <p>
+          Relay UK (if you cannot hear or speak on the phone): 18001 then 0800 121 6279<br>
+          <a href="">https://relayuk.bt.com</a>
+        </p>
+
+        <p>
+          Video relay service for British Sign Language (BSL) users:<br>
+          <a href="">https://portal.starleaf.com/webrtc name=DWP&target=DWP@interpreterslive.call.sl</a>
+        </p>
+
+        <p>
+          Check you can use the video relay service:<br>
+          <a href="">https://www.dalanguages.co.uk/dwp-bsl/</a>
+        </p>
+
+        <p>
+          Calls to 0800 numbers are free from landlines and mobiles.
+        </p>
+
+        <p>
+          Please do not reply to this message. Any email sent in response will be deleted without being read. DWP will never ask you to send any usernames, passwords, personal health/medical or bank account information via email.
+        </p>
+
+        <p>
+          Yours sincerely<br>
+          Office manager
+        </p>
+
+      </div>
+
+      {{ govukFooter({}) }}
+
+    </div>
+
+  </div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

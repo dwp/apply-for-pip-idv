@@ -1,0 +1,78 @@
+{% extends "layouts/unbranded.html" %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            When would you expect to receive a reminder to confirm your identity?
+          </h1>
+        </legend>
+      </fieldset>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-1" name="reminder-frequency" type="radio" value="Next">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-1">
+                The next day
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-2" name="reminder-frequency" type="radio" value="Two">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-2">
+                After 2 days
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-3" name="reminder-frequency" type="radio" value="Three">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-3">
+                After 3 days
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-4" name="reminder-frequency" type="radio" value="Four">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-4">
+                After 4 days
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-5" name="reminder-frequency" type="radio" value="Five">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-5">
+                After 5 days
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-6" name="reminder-frequency" type="radio" value="Week">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-6">
+                After 1 week
+              </label>
+            </div> <!-- govuk-radios__item -->
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="reminder-frequency-7" name="reminder-frequency" type="radio" value="More">
+              <label class="govuk-label govuk-radios__label" for="reminder-frequency-7">
+                More than 1 week
+              </label>
+            </div> <!-- govuk-radios__item -->
+          </div> <!-- govuk-radios govuk-radios -->
+        </fieldset>
+      </div> <!-- govuk-form-group -->
+
+      {{ govukButton({
+        text: "Continue",
+        href: "quantity"
+      }) }}
+
+  </div>
+
+  <div class="govuk-grid-column-full">
+    <img class="calendar" src="/public/images/calendar-march.png" alt="Screenshot of the month view in Apple calendar app">
+  </div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

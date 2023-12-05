@@ -1,0 +1,47 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "Contact DWP to start a new application by phone" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>If you cannot create an account to Apply for PIP online, we can help you to apply over the phone instead.</p>
+
+      <p>The sooner you do this, the earlier you could set your date of claim and the earlier your payments could begin if you’re awarded PIP.</p>
+
+      <h2 class="govuk-heading-m">PIP new claims line</h2>
+
+      <p>Telephone: 0800 917 2222</p>
+      <p>Textphone: 0800 917 7777</p>
+      <p><a href="https://www.relayuk.bt.com/">Relay UK</a> (if you cannot hear or speak on the phone): 18001 then 0800 917 2222</p>
+      <p><a href="https://connect.interpreterslive.co.uk/vrs?ilc=DWP">Video relay service</a> for British Sign Language (BSL) users - <a href="https://www.youtube.com/watch?v=oELNMfAvDxw">check you can use the service</a>.</p>
+      <p>Monday to Friday, 8am to 5pm.</p>
+      <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a>.</p>
+
+      <h2 class="govuk-heading-m">If you have an online Apply for PIP account</h2>
+
+      <p><a href="../future-improvement/PIP-your-email-address">Sign in to Apply for PIP</a>.</p>
+
+      <p>You will need your email address, mobile phone and password to sign in to PIP.</p>
+
+    </div>
+  </div>
+{% endblock %}

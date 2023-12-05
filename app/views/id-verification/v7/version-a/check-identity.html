@@ -1,0 +1,72 @@
+{% extends "layouts/oidv-nav-citizenme.html" %}
+
+{% set pageQuestion = "We need to check your identity" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>You can either confirm your identity online or by calling us.</p>
+
+      <h2 class="govuk-heading-m">Confirm your identity online</h2>
+
+      <p>You will need information from 2 sources. You can choose from:</p>
+      <ul class="govuk-list govuk-list--bullet govuk-list--margin">
+        <li>a valid UK passport</li>
+        <li>a payslip from the last 3 months</li>
+        <li>a current P60</li>
+        <li>your Self Assessment tax return - the most recent payment you made</li>
+        <li>a current tax credits claim - a recent payment you received</li>
+      </ul>
+
+      <form action="#" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              Do you want to confirm your identity online?
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="oidv-1" name="oidv" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="oidv-1">
+                  Yes - confirm identity online
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="oidv-2" name="oidv" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="oidv-2">
+                  No - call to confirm identity by phone
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+    </div>
+  </div>
+{% endblock %}

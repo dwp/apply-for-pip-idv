@@ -1,0 +1,49 @@
+{% extends "layouts/oidv-nav.html" %}
+{% set pageQuestion = "Sign in to Apply for PIP" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+            <h2 class="govuk-heading-m">If you've signed in to Apply for PIP since Sunday 13 August 2023</h2>
+
+            <p><a href="../authentication/sign-in">Sign in with your Apply for PIP password</a>.</p>
+
+            <h2 class="govuk-heading-m">If the last time you signed into Apply for PIP was before Sunday 13 August 2023</h2>
+
+            <p>Your PIP application progress is saved. We need you to register or sign in again to continue your application.</p>
+
+            <p>Our new sign-in process is linked to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Access to work</li>
+              <li>Repay and manage benefit money you owe</li>
+              <li>Pension Credit</li>
+            </ul>
+
+            <p>If you <strong>have</strong> used one of these services before, <a href="../authentication/sign-in">sign in</a>. You'll need to use the password you used for that service. It will then be your new Apply for PIP password.</p>
+
+            <p>If you have <strong>not</strong> used any of these services before, you'll need to register. You'll need to set a password which will be your new Apply for PIP password.</p>
+
+            <p><a href="../register/start">Register to continue your application</a>.</p>
+
+    </div>
+  </div>
+{% endblock %}

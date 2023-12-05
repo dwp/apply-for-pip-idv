@@ -1,0 +1,214 @@
+{% extends "layouts/layout.html" %}
+​
+{% block pageTitle %}
+  GOVUK How to claim PIP
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Benefits</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Benefits and financial support if you're disabled or have a health condition</a>
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+​
+{% block content %}
+​​
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-!-margin-top-0 govuk-!-padding-top-0">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Personal Independence Payment (PIP)</h1>
+
+        <aside class="app-mainstream-guide-contents-list" role="complementary">
+  <nav class="app-contents-list" aria-label="Pages in this guide" role="navigation">
+
+    <h2 class="app-contents-list__title">
+      Contents
+    </h2>
+
+    <ol class="app-contents-list__list">
+      <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+        <a href="./gov-uk-1-content">
+          What PIP is for
+        </a>
+        </li>
+      <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+        <a href="./gov-uk-2-content">
+          Eligibility
+        </a>
+        </li>
+
+      <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+        <a href="./gov-uk-3-content">
+          How much you’ll get
+        </a>
+        </li>
+
+      <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+        <a href="./gov-uk-4-content">
+          How to claim
+        </a>
+        </li>
+
+        <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+          <a href="./gov-uk-5-content">
+            If your PIP claim is reviewed
+          </a>
+          </li>
+
+        <li class="app-contents-list__list-item app-contents-list__list-item--dashed">
+          <a href="./gov-uk-6-content">
+            Change of circumstances
+          </a>
+          </li>
+
+          <li class="app-contents-list__list-item app-contents-list__list-item--dashed app-contents-list__list-item--active">
+
+              Claiming PIP if you might have 12 months or less to live
+
+          </li>
+    </ol>
+  </nav>
+</aside>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+        <h1 class="govuk-heading-l">Claiming PIP if you might have 12 months or less to live</h1>
+
+        <p class="govuk-body">You can get Personal Independence Payment (PIP) more quickly if:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your doctor or a medical professional has said you might have 12 months or less to live</li>
+          <li>you’re aged 16 or over</li>
+        </ul>
+        <p class="govuk-body">You must also be under State Pension age if you’ve not received PIP before..</p>
+
+        <div class="govuk-inset-text">If you live in Scotland, you need to apply for <a href="#">Adult Disability Payment (ADP) </a>instead.</div>
+
+        <h2 class="govuk-heading-m">What you’ll get</h2>
+
+        <p class="govuk-body">You’ll get the higher daily living part of £101.75 per week.</p>
+
+        <p class="govuk-body">Whether you get the mobility part and how much you’ll get depends on your needs. The lower weekly rate is £26.90 and the higher weekly rate is £71.00.</p>
+
+
+        <h2 class="govuk-heading-m">How to claim</h2>
+        <p class="govuk-body">You can claim for yourself or someone else can do it for you.</p>
+
+            <ol class="govuk-list govuk-list--number steps">
+              <li>Call the PIP claims line to start your claim.</li>
+              <li>Ask a medical professional for form SR1. They’ll either fill it in and give the form to you or send it directly to the Department for Work and Pensions (DWP).</li>
+              <li>If you also claim Universal Credit, sign in to your online account and use your journal to say that you have sent an SR1 to DWP.</li>
+            </ol>
+
+
+        <p class="govuk-body">You will not need to go to a face-to-face assessment.</p>
+
+
+        <p class="govuk-body">If you need someone to help you, you can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>ask for them to be added to your call - you cannot do this if you use textphone</li>
+          <li>ask someone else to call on your behalf - you’ll need to be with them when they call</li>
+        </ul>
+
+        <div class="govuk-inset-text govuk-inset-text-light">
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-2">PIP new claims</h2>
+
+          <ul class="govuk-list govuk-list">
+            <li>Telephone: 0800 917 2222</li>
+            <li>Textphone: 0800 917 7777</li>
+            <li><a href="#">Relay UK</a> (if you cannot hear or speak on the phone): 18001 then 0800 917 2222</li>
+            <li>British Sign Language (BSL) <a href="#">video relay service</a> if you’re on a computer - find out how to <a href="#">use the service on mobile or tablet</a> </li>
+            <li>Calling from abroad: +44 191 218 7766</li>
+            <li>Monday to Friday, 8am to 5pm</li>
+            <li><a href="#">Find out about call charges</a> </li>
+          </ul>
+        </div>
+
+        <div class="govuk-inset-text">You may be able to get other benefits if you’re nearing the end of life.</div>
+
+
+              </div>
+
+              <div class="govuk-grid-column-one-third">
+                {% include "./gov-uk-side-menu.html" %}
+              </div>
+            </div>
+
+
+
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <hr class="govuk-section-break govuk-section-break--visible">
+
+                <!-- LOWER NAV -->
+                <div>
+
+                  <nav class="app-pagination" role="navigation" aria-label="Pagination">
+                    <ul class="app-pagination__list">
+
+                      <li class="app-pagination__item app-pagination__item--prevous">
+                        <a href="gov-uk-6-content" class="govuk-link app-pagination__link" rel="Prevous">
+                          <span class="app-pagination__link-title">
+                            <svg class="app-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                            </svg>
+                            <span class="app-pagination__link-text">
+                              Previous
+                            </span>
+                          </span>
+                          <span class="app-pagination__link-divider visually-hidden">:</span>
+                          <span class="app-pagination__link-label">
+                            Change of circumstances
+                          </span>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </nav>
+
+
+              </div>
+
+              </div>
+
+              <div class="govuk-grid-column-one-third">
+              </div>
+            </div>
+          </main>
+        </div>
+
+
+<!-- LOWER NAV -->
+
+​
+​
+{% endblock %}

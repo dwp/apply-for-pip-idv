@@ -1,0 +1,211 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Design iteration for Day 1 release and future updates – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Design iteration for Day 1 release and future improvements</h1>
+
+    <p>These are team Peregrine mockups of pages that include updates for Day 1 release, or future improvements.</p>
+
+    <p>These are intended to be picked up by three teams:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Apply for PIP - team Peregrine (handing over to team Goldcrest)</li>
+      <li>Apply for PIP - team Goldcrest</li>
+      <li>DWP Apply - who own DTH (Dynamic Trust Hub), including registration, sign in and OIDV for PIP</li>
+    </ul>
+
+  <br />
+
+    <h2 class="govuk-heading-m">Design updates - Day 1 release</h2>
+
+    <p>
+      <strong>Apply for PIP (team Peregrine)</strong>
+    </p>
+
+    <p class="govuk-body-s"><strong>
+      September-October 2023</strong>
+    </p>
+
+    <p>Pages built by team Peregrine, used in Day 1 release 'option B' after the pivot.</p>
+
+    <p>Unprotected pages:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>PIP 'Sign in' page was updated to have the heading 'your email address'</li>
+      <li>a 'Contact DWP' support page was created for Day 1 release - additional support pages to be created as future improvements</li>
+      <li>IDV 'Identity confirmed' page</li>
+      <li>IDV 'Call us to confirm your identity' page - from DTH's pages via JSON file for option F (PIP creds)</li>
+      <li>timeout page - 'Your session has timed out' with 20 minute update (dynamic content)</li>
+      <li>'You have signed out' page as a single, unprotected page</li>
+    </ul>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/PIP-your-email-address">Your email address</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/support-day-1">Contact DWP</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/identity-confirmed-2">Identity confirmed</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/call-us-to-confirm-identity">Call us to confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/PIP-timeout-4">Your session has timed out</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/you-have-signed-out">You have signed out</a>
+      </li>
+      </ul>
+
+      <p>Protected pages:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>'You are now signed in' page for first-time users</li>
+        <li>Welcome back page, to meet a technical requirement</li>
+        <li>IDV 'Call us to confirm your identity' page - in PIP claimant UI</li>
+      </ul>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/you-are-now-signed-in-2">You are now signed in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/welcome-back">Welcome back</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/zero-confidence/future-improvement/call-to-confirm-identity">Call us to confirm your identity</a>
+      </li>
+      </ul>
+
+  <br />
+
+      <h2 class="govuk-heading-m">Design updates - not implemented for Day 1 release</h2>
+
+      <p class="govuk-body-s"><strong>
+        September 2023</strong>
+      </p>
+
+      <p>Page built by Peregrine for Day 1 release, that was no longer required after pivot to 'option B'.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a zero speedbump page 'we need you register again for Apply for PIP' was updated following UR findings (scenario 4)</li>
+      </ul>
+
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="/zero-confidence/future-improvement/registration-speedbump-2">We need you register again for Apply for PIP</a>
+        </li>
+        </ul>
+
+  <br />
+
+      <p>
+        <strong>DWP Apply</strong>
+      </p>
+
+      <p class="govuk-body-s"><strong>
+        September-October 2023</strong>
+      </p>
+
+      <p>Pages mocked up by team Peregrine to share with DWP Apply team to support them in implemeting login hint. Login hint functionality was not implemented for Day 1 release.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>login hint pages</li>
+      </ul>
+
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="/zero-confidence/v2-b-speedbump/register/email-address-test-2">Your email address page with login hint</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/future-improvement/sign-in-login-hint">Sign in page with login hint</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/future-improvement/sign-in-error-login-hint">Sign in page with login hint and error - (password incorrect - first time)</a><br>The field requires password show/hide to be added.
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/future-improvement/sign-in-error-login-hint2">Sign in page with login hint and error - (password incorrect - second time)</a><br>The field requires password show/hide to be added.
+        </li>
+        </ul>
+
+  <br />
+
+      <h2 class="govuk-heading-m">Future improvement pages</h2>
+
+
+          <p>
+            <strong>Apply for PIP (team Goldcrest)</strong>
+          </p>
+
+          <p>Pages mocked up by team Peregrine to share with Apply for PIP team Goldcrest to implement as future updates.</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>WIP support pages to provide additional information to a user stuck in zero or medium journeys to Apply for PIP (to be implemented by 4 December)</li>
+            <li>IDV speedbump 'we need to check your identity' page with content updates</li>
+          </ul>
+
+            <ul class="govuk-list">
+            <p class="govuk-body-s">
+              <strong>Support pages (WIP)</strong>
+            </p>
+            <li>
+              <a class="govuk-link" href="/zero-confidence/future-improvement/support-day-2-not-registered">Contact DWP to start a new application by phone</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="/zero-confidence/future-improvement/support-day-2-registered">Contact DWP</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="/zero-confidence/future-improvement/support-day-2-OID">Call us to confirm your identity</a>
+            </li>
+          </ul>
+
+          <ul class="govuk-list">
+          <p class="govuk-body-s">
+            <strong>IDV pages</strong>
+          </p>
+          <li>
+            <a class="govuk-link" href="/zero-confidence/v1/identity/check-identity">We need to check your identity</a>
+          </li>
+        </ul>
+
+  <br />
+
+      <p>
+        <strong>DWP Apply</strong>
+      </p>
+
+      <p>Pages mocked up by team Peregrine to share with DWP Apply team to implement as possible future updates.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>pages with 'I need help' links to navigate to PIP support pages</li>
+      </ul>
+
+      <ul class="govuk-list">
+        <p class="govuk-body-s">
+          <strong>Links to support pages</strong>
+        </p>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/v2-b-speedbump/register/start">Register</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/future-improvement/sign-in-login-hint">Sign in</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/v2-b-speedbump/register/password">Create a password</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="/zero-confidence/v2-b-speedbump/register/complete">Your registration was successful</a>
+        </li>
+      </ul>
+
+{% endblock %}

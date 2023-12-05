@@ -1,0 +1,167 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Option F MVP prototype – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Option F MVP prototype</h1>
+
+      <h2 class="govuk-heading-m">Prototype</h2>
+
+      <p>
+        The Option F MVP prototype includes the online identity verification after PIP2. We use the ID&T (DTH) solution for the online identity verification.
+      </p>
+
+      <p class="govuk-body-s">
+        Version 1, March 2023
+      </p>
+
+      <a href="email" class="govuk-button govuk-button">View prototype</a>
+
+      <h2 class="govuk-heading-m">Prototype content</h2>
+
+      <ul class="govuk-list">
+        <p>
+          <strong>Apply for PIP screens</strong>
+        </p>
+        <li>
+          <a class="govuk-link" href="email">Registration email</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="intro-question">Intro question: Have you used the Apply for PIP online service before?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="sign-in">Sign in</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="sign-in-verification">Sign in mobile verification</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="register-start">Register</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="enter-details">Enter your details</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="mobile-phone-verification">Mobile verification</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="create-password">Create your password</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="signed-in">You are now signed in</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="registration/registration-complete">Stage one submitted</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="submission/stage2submitted">Stage 2 submitted</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="submission/signed-out">You have signed out</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity/what-do-you-want-to-do">What do you want to do?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity/what-do-you-want-to-do-error">What do you want to do? - error message</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity/check-identity">We need to check your identity</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity/call-to-confirm-identity">Call us to confirm your identity</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity/call-us-to-confirm-identity">Call us to confirm your identity - unprotected page</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="identity-confirmed">Identity confirmed</a>
+        </li>
+      </ul>
+
+      <ul class="govuk-list">
+        <p>
+          <strong>DTH screens</strong>
+        </p>
+        <li>
+          <a class="govuk-link" href="dth/register">Register</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/email-address">Enter your email address</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/email-address-verification">Check your email</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/create-password">Create a password</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/mobile-phone-number">Enter your mobile phone number</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/mobile-phone-verification">Check your phone</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/registration-complete">Your registration was successful</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/sign-in">Sign in</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/sign-in-verification">Check your phone (sign in verification)</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/collecting-your-personal-details">Your personal details</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/name">What is your name?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/date-of-birth">What is your date of birth?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/postcode">What is your postcode?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/hmrc-iv">HMRC: We need to check your identity</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/hmrc-your-details">HMRC: Enter your details</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/hmrc-national-insurance-number">HMRC: What is your National Insurance number?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/hmrc-details-postcode">HMRC: What is your postcode?</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/hmrc-id-verification-start">HMRC: We need you to confirm your identity</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/choose-2-items">HMRC: Choose 2 items we can ask you about</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/choose-2-items-error">HMRC: Choose 2 items we can ask you about - error message</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/more-information">HMRC: We cannot confirm your identity</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/id-verification-completed">HMRC: Identity check complete</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="dth/confirm-another-way">We’ve been unable to confirm your identity</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+{% endblock %}

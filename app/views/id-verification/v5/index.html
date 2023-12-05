@@ -1,0 +1,164 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Design iteration for UR5 – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Design iteration for UR5</h1>
+
+    <h2 class="govuk-heading-m">Prototype</h2>
+
+    <p>We tested the user journey for Option F (DTH OIDV after PIP2). We skipped PIP1 and PIP2 questions. We asked participants to sign out from the Apply for PIP service from the 'Stage 2 submitted' page so we could test the sign back in journey.</p>
+
+    <p class="govuk-body-s">
+      Version 5, December 2022
+    </p>
+
+    <a href="/id-verification/v5/guide" class="govuk-button govuk-button">View prototype</a>
+
+    <h2 class="govuk-heading-m">Prototype content</h2>
+
+    <p>
+      <strong>Apply for PIP screens</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="guide">Personal Independence Payment (PIP) guide page</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="email">Registration email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="intro-question">Intro question: Are you using the Apply for PIP service online for the first time?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="sign-in">Sign in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="sign-in-verification">Sign in mobile verification</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register-start">Register</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="enter-details">Enter your details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="mobile-phone-verification">Mobile verification</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="create-password">Create your password</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="signed-in">You are now signed in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip1/check-answers">PIP1: Check your answers</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip1/confirmation">Stage one submitted</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="task-list-1">PIP2 task list - not started</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="task-list-2">PIP2 task list - last task not started</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/supporting-evidence/">Supporting evidence</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/apply/declaration">Declaration</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/apply/confirmation">Stage 2 submitted</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/apply/signed-out">You have signed out (after PIP2)</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="pip2-next-step">We need to check your identity (What do you want to do?)</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="idv-intro">We need to check your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="idv-phone">Call us to confirm your identity</a>
+      </li>
+    </ul>
+
+    <p>
+      <strong>DTH screens</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="dth/register">Register</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/email-address">Enter your email address</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/email-address-verification">Check your email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/create-password">Create a password</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/mobile-phone-number">Enter your mobile phone number</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/mobile-phone-verification">Check your phone</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/registration-complete">Your registration was successful</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/sign-in">Sign in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/sign-in-verification">Check your phone (sign in verification)</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/name">What is your name?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/date-of-birth">What is your date of birth?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/postcode">What is your postcode?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/hmrc-iv">HMRC: We need to check your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/hmrc-your-details">HMRC: Enter your details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/hmrc-national-insurance-number">HMRC: What is your National Insurance number?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/hmrc-details-postcode">HMRC: What is your postcode?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/hmrc-id-verification-start">HMRC: We need you to confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/choose-2-items">HMRC: Choose 2 items we can ask you about</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/more-information">HMRC: We cannot confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="dth/confirm-another-way">We’ve been unable to confirm your identity</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}

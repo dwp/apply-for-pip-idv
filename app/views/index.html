@@ -1,0 +1,141 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }} prototype
+    </h1>
+
+    <h2 class="govuk-heading-l">Online identity verification prototypes</h2>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Design updates and future improvements</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Prototype</th>
+          <th scope="col" class="govuk-table__header">Date</th>
+          <th scope="col" class="govuk-table__header">Details</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Design updates</th>
+          <td class="govuk-table__cell">September 2023</td>
+          <td class="govuk-table__cell">Updates to pages for Day 1 release, and mockups of future improvements for DWP Apply and Apply for PIP teams.</td>
+          <td class="govuk-table__cell"><a href="/zero-confidence/future-improvement">Prototype index</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Developed prototypes</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Prototype</th>
+          <th scope="col" class="govuk-table__header">Date</th>
+          <th scope="col" class="govuk-table__header">Details</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Option F MVP</th>
+          <td class="govuk-table__cell">March 2023</td>
+          <td class="govuk-table__cell">Option F MVP iteration with online identity verification journey after the user PIP2.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/optionf-v1/">Prototype index</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Usability testing</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Prototype</th>
+          <th scope="col" class="govuk-table__header">Date</th>
+          <th scope="col" class="govuk-table__header">Details</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Zero confidence version 2 - Part A</th>
+          <td class="govuk-table__cell">July 2023</td>
+          <td class="govuk-table__cell">Testing zero confidence journey scenario 4b - PIP eligibility, registration, sign in, apply for PIP part 1 and sign out partway through part 2.</td>
+          <td class="govuk-table__cell"><a href="/zero-confidence/v2-a/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Zero confidence version 2 - Part B (no speedbump)</th>
+          <td class="govuk-table__cell">July 2023</td>
+          <td class="govuk-table__cell">Testing zero confidence journey scenario 4b - returning users register for DTH creds, return to partway through application.</td>
+          <td class="govuk-table__cell"><a href="/zero-confidence/v2-b-free-for-all/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Zero confidence version 2 - Part B (with speedbump)</th>
+          <td class="govuk-table__cell">July 2023</td>
+          <td class="govuk-table__cell">Testing zero confidence journey scenario 4b - returning users, speed bump page, register for DTH creds, return to partway through application.</td>
+          <td class="govuk-table__cell"><a href="/zero-confidence/v2-b-speedbump/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Zero confidence version 1</th>
+          <td class="govuk-table__cell">June 2023</td>
+          <td class="govuk-table__cell">Testing zero confidence journey and the OIDV unhappy path.</td>
+          <td class="govuk-table__cell"><a href="/zero-confidence/v1/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 7</th>
+          <td class="govuk-table__cell">May 2023</td>
+          <td class="govuk-table__cell">Testing different versions of the IDV speed bump page, part of Option F.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v7/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 6</th>
+          <td class="govuk-table__cell">March 2023</td>
+          <td class="govuk-table__cell">Testing the unhappy path of the iterated user journey for Option F (OIDV after PIP2).<br>Identity verification reminders discovery.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v6/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 5</th>
+          <td class="govuk-table__cell">December 2022</td>
+          <td class="govuk-table__cell">Testing the OIDV unhappy path for Option F (DTH OIDV after PIP2).<br>Participants are asked to sign out after they submit the PIP2 so we can test the sign back in journey.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v5/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 4</th>
+          <td class="govuk-table__cell">October 2022</td>
+          <td class="govuk-table__cell">Testing the bank details and Motability Scheme questions as part of PIP2 as well as the DTH OIDV unhappy path after PIP2.<br>Participants are asked to sign out after they sign in to DTH.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v4/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 3</th>
+          <td class="govuk-table__cell">September 2022</td>
+          <td class="govuk-table__cell">Testing the DTH OIDV journey with KBV uplift.<br>Testing PIP2 task list that includes PIP1 and OIDV.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v3/">Prototype index</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 2</th>
+          <td class="govuk-table__cell">August 2022</td>
+          <td class="govuk-table__cell">We are using the DTH ID verification journey after the user completes PIP1 and PIP2.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v2/">View prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Version 1</th>
+          <td class="govuk-table__cell">August 2022</td>
+          <td class="govuk-table__cell">We are using the DTH ID verification journey before PIP1.</td>
+          <td class="govuk-table__cell"><a href="/id-verification/v1/">View prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+{% endblock %}

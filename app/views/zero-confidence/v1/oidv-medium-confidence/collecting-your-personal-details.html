@@ -1,0 +1,39 @@
+{% extends "layouts/oidv-dth.html" %}
+
+{% set pageQuestion = "Your personal details" %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>You will now be asked to enter your name, date of birth, and postcode. This information will help us match your details to our records.</p>
+
+      <p>Once this is complete, you will then be asked further questions to help us confirm who you are.</p>
+
+      <p>You may need to re-enter details about yourself. This is nothing to worry about. It simply helps us confirm it is you and protect you from fraud.</p>
+
+      {{ govukButton({
+        text: "Continue",
+        href: "name"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

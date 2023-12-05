@@ -1,0 +1,188 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Design iteration for zero confidence V1 UR – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Design iteration for zero confidence V2 - Part B (with speedbump)</h1>
+
+    <h2 class="govuk-heading-m">Prototype</h2>
+
+    <p>This version contains a speedbump page, to let users know they will need to register again.</p>
+    <p>We tested the user journey for scenario 4b. We asked the same participants from Part A to return to their PIP application partway through.</p>
+    <p>We tested users returning with PIP creds being asked to register for DTH creds before signing in to continue their application.</p>
+
+    <p class="govuk-body-s">
+      Zero confidence version 2 - Part B, July 2023
+    </p>
+
+    <a href="govuk/gov-uk-1-content" class="govuk-button govuk-button">View prototype</a>
+
+    <h2 class="govuk-heading-m">Prototype content</h2>
+
+    <p>
+      <strong>GOV.UK</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-1-content">What PIP is for</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-2-content">Eligibility</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-3-content">How much you'll get</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-4-content">How to claim</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-5-content">If your PIP claim is reviewed</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-6-content">Change of circumstances</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="govuk/gov-uk-7-content">Claiming PIP if you might have 12 months or less to live</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>PIP auth</strong>
+      </p>
+
+      <li>
+        <a class="govuk-link" href="sign-in">Sign in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="verify/sign-in/password">Your password</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="verify/sign-in/security-code">How do you want to receive your security code?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="verify/sign-in/code-text">A 6 digit code has been texted to mobile number ending 789</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="verify/sign-in/code-email">We have sent you an email with your 6 digit code</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="registration-speedbump">Registration speedbump</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>DTH registration</strong>
+      </p>
+      <li>
+        <a class="govuk-link" href="register/start">Register</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/email-address-test-2">Your email address</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/email-code">Check your email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/password">Create a password</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/mobile">Enter your mobile phone number</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/code">Check your phone</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="register/complete">Your registration was successful</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>DTH sign in</strong>
+      </p>
+      <li>
+        <a class="govuk-link" href="authentication/sign-in-2">Sign in - after registration with DTH</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="authentication/sign-in-2fa">Check your phone</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>Apply for PIP</strong>
+      </p>
+      <li>
+        <a class="govuk-link" href="you-are-now-signed-in">You are now signed in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="task-list">Task list</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<ul class="govuk-list">
+  <p>
+    <strong>DTH unhappy paths</strong>
+  </p>
+  <li>
+    <a class="govuk-link" href="authentication/sign-in">Sign in - before registration with DTH</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="authentication/sign-in-error">Sign in - error</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="register/resend-email">Send me a new email</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="reset-password/start">Reset your password</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="account-recovery/email-address">Enter the email address you used to register with this service</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="reset-password/reset-email-not-registered">This email address is not registered with this service</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="account-recovery/start-new-email">Create new sign in details</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="account-recovery/start-new-phone">Update your mobile phone number</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="account-recovery/email-address">Enter the email you use to sign in</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="account-recovery/email-code">Check your email</a>
+  </li>
+</ul>
+
+<ul class="govuk-list">
+  <p>
+    <strong>DTH support pages</strong>
+  </p>
+  <li>
+    <a class="govuk-link" href="support/support-register">Registering for PIP</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="support/support-password">Create a password to Apply for PIP</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="support/support-sign-in">Sign in to Apply for PIP</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="support/support-successful-reg">You are registered to Apply for PIP</a>
+  </li>
+</ul>
+
+{% endblock %}

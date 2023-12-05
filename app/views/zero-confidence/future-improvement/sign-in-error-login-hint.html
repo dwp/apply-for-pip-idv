@@ -1,0 +1,92 @@
+{% extends "layouts/layout.html" %}
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+{% block pageTitle %}
+  Error: Sign in - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+    {% include 'includes/phase-banner.njk' %}
+    {% include 'includes/language-toggle.njk' %}
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form action="#" method="post">
+
+                <div class="govuk-error-summary" data-module="govuk-error-summary">
+                  <div role="alert">
+                    <h2 class="govuk-error-summary__title">
+                      There is a problem
+                    </h2>
+                    <div class="govuk-error-summary__body">
+                      <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                          <a href="#sign-in-details">The password you entered is incorrect</a>
+                        </li>
+                        <li>
+                          <a href="#sign-in-details">Register now if you have not used this service before</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {{ govukFieldset({
+                    legend: {
+                        html: 'Sign in',
+                        classes: "govuk-fieldset__legend--l",
+                        isPageHeading: true
+                    }
+                })}}
+
+                <p class="govuk-body">
+                  Your email address is
+                  <strong class="govuk-!-font-weight-bold">
+                      {% if data['email'] %}
+                            {{ data['email'] | lower }}
+                      {% else %}
+                          email@email.com
+                      {% endif %}
+                  </strong>.
+                </p>
+
+                <div class="govuk-form-group govuk-form-group--error">
+  <label class="govuk-label" for="national-insurance-number">
+    Password
+  </label>
+  <p id="national-insurance-number-error" class="govuk-error-message">
+    <span class="govuk-visually-hidden">Error:</span> The password you entered is incorrect
+  </p>
+  <input class="govuk-input govuk-input--error" id="national-insurance-number" name="nationalInsuranceNumber" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error">
+</div>
+
+                <p>
+                    <a href="../register/start">
+                        Register now
+                    </a>
+                    if you have not used this service before.
+                </p>
+
+                <h2 class="govuk-heading-m">Problems signing in</h2>
+
+                <ul class="govuk-list">
+                    <li>
+                        <a href="../reset-password/start" class="govuk-link">I forgot my password</a>
+                    </li>
+                    <li>
+                        <a href="../account-recovery/start-new-email" class="govuk-link">I cannot access the email I use to sign in</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link" href="../support/support-sign-in">I need help</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+{% endblock %}

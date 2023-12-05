@@ -1,0 +1,179 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Design iteration for zero confidence V1 UR – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Design iteration for zero confidence V1</h1>
+
+    <h2 class="govuk-heading-m">Prototype</h2>
+
+    <p>We tested the new zero confidence user journey for Apply for PIP. We skipped PIP1 and PIP2 questions and asked participants to continue with confirming their identity from the 'Stage 2 submitted' page.</p>
+    <p>We continued with the OIDV unhappy path screens.</p>
+    <p>We also tested the updated versions of email and text OIDV reminders.</p>
+
+    <p class="govuk-body-s">
+      Zero confidence version 1, June 2023
+    </p>
+
+    <a href="/zero-confidence/v1/guide" class="govuk-button govuk-button">View prototype</a>
+
+    <h2 class="govuk-heading-m">Prototype content</h2>
+
+    <p>
+      <strong>GOV.UK screens</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="guide">Personal Independence Payment (PIP) guide page</a>
+      </li>
+    </ul>
+
+    <p>
+      <strong>Zero confidence screens</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/register">Register</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/email-address">Enter your email address</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/email-address-verification">Check your email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/resend-email">Send me a new email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/create-password">Create a password</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/mobile-phone-number">Enter your mobile phone number</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/mobile-phone-verification">Check your phone</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/resend-code">Send me a new text message</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/registration-successful">Your registration was successful</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/registration-email">Registration email</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/choose-your-service">Choose your service</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/sign-in">Sign in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-zero-confidence/sign-in-verification">Check your phone (sign in verification)</a>
+      </li>
+    </ul>
+
+    <p>
+      <strong>Apply for PIP screens</strong>
+    </p>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="you-are-now-signed-in">You are now signed in</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip1/check-answers">PIP1: Check your answers</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/task-list-1">PIP2 task list - not started</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/task-list-2">PIP2 task list - last task not started</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/supporting-evidence/">Supporting evidence</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/apply/declaration">Declaration</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="live-pip2/apply/confirmation">Stage 2 submitted</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="identity/check-identity">We need to check your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="identity/call-to-confirm-identity">Call us to confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="identity/call-us-to-confirm-identity">Call us to confirm your identity (OIDV unhappy path)</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>DTH screens</strong>
+      </p>
+
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/collecting-your-personal-details">Your personal details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/name">What is your name?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/date-of-birth">What is your date of birth?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/postcode">What is your postcode?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/hmrc-iv">HMRC: We need to check your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/hmrc-your-details">HMRC: Enter your details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/hmrc-national-insurance-number">HMRC: What is your National Insurance number?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/hmrc-details-postcode">HMRC: What is your postcode?</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/hmrc-id-verification-start">HMRC: We need you to confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/choose-2-items">HMRC: Choose 2 items we can ask you about</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/choose-2-items-error">HMRC: Choose 2 items we can ask you about - error message</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/more-information">HMRC: We cannot confirm your identity</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-medium-confidence/confirm-another-way">We’ve been unable to confirm your identity</a>
+      </li>
+    </ul>
+
+    <ul class="govuk-list">
+      <p>
+        <strong>OIDV reminder questions</strong>
+      </p>
+      <li>
+        <a class="govuk-link" href="oidv-reminders/email">Email OIDV reminder</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="oidv-reminders/text">Text OIDV reminder</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "",
+  serviceName: "",
+  serviceUrl: "",
+  containerClasses: "govuk-width-container"
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+tag: {
+  text: "prototype"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<nav aria-label="Language toggle">
+  <ul class="dwp-language-toggle__list govuk-list">
+    <li class="dwp-language-toggle__list-item">
+        English
+    </li>
+    <li lang="cy" class="dwp-language-toggle__list-item">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <a href="?lang=cy" class="govuk-link">Cymraeg</a>
+    </li>
+  </ul>
+</nav>
+
+{% endblock %}

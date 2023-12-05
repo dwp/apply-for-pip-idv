@@ -1,0 +1,39 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "Contact DWP" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>Telephone: 0800 171 2169</p>
+      <p>Textphone: 0800 121 4493</p>
+      <p><a href="https://www.relayuk.bt.com/">Relay UK</a> (if you cannot hear or speak on the phone): 18001 then 0800 171 2169</p>
+      <p><a href="https://connect.interpreterslive.co.uk/vrs?ilc=DWP">Video relay service</a> for British Sign Language (BSL) users - <a href="https://www.youtube.com/watch?v=oELNMfAvDxw">check you can use the service</a>.</p>
+      <p>Monday to Friday, 9am to 5pm.</p>
+      <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a>.</p>
+
+      <h2 class="govuk-heading-m">If you want to access Apply for PIP online</h2>
+
+      <p><a href="../future-improvement/PIP-your-email-address">Sign in to Apply for PIP</a>.</p>
+
+    </div>
+  </div>
+{% endblock %}

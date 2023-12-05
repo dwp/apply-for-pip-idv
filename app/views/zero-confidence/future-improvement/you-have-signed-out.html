@@ -1,0 +1,29 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "You have signed out" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }}  – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "You have signed out"
+      }) }}
+
+      <p>It's now safe to close this window.</p>
+      <p><a href="PIP-your-email-address">Sign in to your Apply for PIP account</a>.</p>
+      <p>You will need your email address, mobile phone and password to sign in.</p>
+
+      <h2 class="govuk-heading-m">Give feedback</h2>
+      <p><a class="govuk-link" href="" target="_blank">What did you think of this service? (opens in new tab)</a> takes 30 seconds.</p>
+      <p><a class="govuk-link"href="" target="_blank">Volunteer to take part in research about PIP (opens in new tab)</a>.</p>
+
+    </div>
+  </div>
+{% endblock %}

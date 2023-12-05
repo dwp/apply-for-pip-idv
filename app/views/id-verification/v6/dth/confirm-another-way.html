@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+We’ve been unable to confirm your identity
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    serviceName: "",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block serviceName %}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+        We’ve been unable to confirm your identity
+    </h1>
+
+    <p class="govuk-body">We’ve been unable to confirm who you are. This is because the information you entered does not match our records.</p>
+
+    <p>If you think you may have entered the wrong information by mistake, you can start again.</p>
+
+    {{ govukButton({
+      text: "Start again",
+      href: "choose-2-items"
+    }) }}
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          I have checked my details and I am still unable to proceed
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>
+          <a href="../idv-phone-unprotected">Call us to confirm your identity</a>
+        </p>
+      </div>
+    </details>
+
+{% endblock %}

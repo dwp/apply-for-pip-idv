@@ -1,0 +1,37 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "Your session has timed out" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>Your session has timed out because you did not do anything for 20 minutes. This is to protect your information.</p>
+      <p>You already have an account. Please sign in to start a new session.</p>
+
+      {{ govukButton({
+        text: "Sign in",
+        href: "PIP-your-email-address"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

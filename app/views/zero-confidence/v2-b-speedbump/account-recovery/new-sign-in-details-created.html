@@ -1,0 +1,33 @@
+{% extends "layouts/_base.html" %}
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+{% set phaseBanner = 'true' %}
+{% set languageToggle = 'true' %}
+
+{% set title =  "Sign in details updated" %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+
+            {{ govukPanel({
+                titleText: "Sign in details updated"
+            }) }}
+            <p>You can now sign in.</p>
+
+            <p>When you next sign in you will have to answer some questions about yourself before you can use the service. This is to help protect you from fraud.</p>
+
+
+            {{ govukButton({
+                text: "Continue",
+                href: "../authentication/sign-in"
+            }) }}
+        </div>
+    </div>
+{% endblock %}

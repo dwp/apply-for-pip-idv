@@ -1,0 +1,41 @@
+{% extends "layouts/oidv-nav.html" %}
+
+{% set pageQuestion = "Identity confirmed" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">
+    Identity confirmed
+  </h1>
+</div>
+
+      <p>Your identity has been confirmed using the information you gave.</p>
+      <p>If your claim is successful we will pay you as soon as we have made a decision.</p>
+      <p>You can <a href="/zero-confidence/v1/live-pip2/supporting-evidence/">upload more supporting evidence about your condition or disability</a>.</p>
+
+      {{ govukButton({
+        text: "Sign out",
+        href: "task-list"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layouts/oidv-nav.html" %}
+
+{% set pageQuestion = "You are now signed in" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>You will be able to save your progress.</p>
+
+      {{ govukButton({
+        text: "Continue",
+        href: "task-list"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

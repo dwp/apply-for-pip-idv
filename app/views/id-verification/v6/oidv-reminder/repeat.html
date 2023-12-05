@@ -1,0 +1,60 @@
+{% extends "layouts/unbranded.html" %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                How often would you expect to receive the reminders?
+              </h1>
+            </legend>
+            <div class="govuk-radios govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="reminder-repeat-1" name="reminder-repeat" type="radio" value="Every day">
+                <label class="govuk-label govuk-radios__label" for="reminder-repeat-1">
+                  Every day
+                </label>
+              </div> <!-- govuk-radios__item -->
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="reminder-repeat-2" name="reminder-repeat" type="radio" value="Three">
+                <label class="govuk-label govuk-radios__label" for="reminder-repeat-2">
+                  Every 3 days
+                </label>
+              </div> <!-- govuk-radios__item -->
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="reminder-repeat-3" name="reminder-repeat" type="radio" value="Week">
+                <label class="govuk-label govuk-radios__label" for="reminder-repeat-3">
+                  Every week
+                </label>
+              </div> <!-- govuk-radios__item -->
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="reminder-repeat-4" name="reminder-repeat" type="radio" value="Two">
+                <label class="govuk-label govuk-radios__label" for="reminder-repeat-4">
+                  Every 2 weeks
+                </label>
+              </div> <!-- govuk-radios__item -->
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="reminder-repeat-5" name="reminder-repeat" type="radio" value="Other">
+                <label class="govuk-label govuk-radios__label" for="reminder-repeat-5">
+                  Other
+                </label>
+              </div> <!-- govuk-radios__item -->
+            </div> <!-- govuk-radios govuk-radios -->
+          </fieldset>
+        </div> <!-- govuk-form-group -->
+
+        {{ govukButton({
+          text: "Continue",
+          href: "blank"
+        }) }}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

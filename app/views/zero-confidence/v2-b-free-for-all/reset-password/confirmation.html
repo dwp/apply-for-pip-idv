@@ -1,0 +1,27 @@
+{% extends "layouts/_base.html" %}
+{% set phaseBanner = 'true' %}
+{% set languageToggle = 'true' %}
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+{% set title =  "Password reset" %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            {{ govukPanel({
+                titleText: "Password reset"
+            }) }}
+
+            <p>We have sent you an email to confirm your password has been reset.</p>
+
+            <p>You can now sign in with your new password.</p>
+
+            {{ govukButton({
+                text: "Sign in",
+                href: "../authentication/sign-in.html"
+            }) }}
+        </div>
+    </div>
+{% endblock %}

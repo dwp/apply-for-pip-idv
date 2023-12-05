@@ -1,0 +1,59 @@
+{% extends "layouts/oidv-nav.html" %}
+{% set pageQuestion = "Registering for PIP" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <h2 class="govuk-heading-m">If you've registered for PIP before</h2>
+
+      <p>We may need you to register again with the same email address. Your application progress is saved.</p>
+
+      <p><a href="../register/start">Register to continue your application</a>.</p>
+
+      <h2 class="govuk-heading-m">If your email address is already registered</h2>
+
+      <p><a href="../authentication/sign-in">Sign in</a>.</p>
+
+      <p>If you have used one of these online services before, you may be able to sign in with the password you used for that service:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Access to work</li>
+        <li>Repay and Manage Benefit Money You Owe</li>
+        <li>Pension Credit</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">If you've applied online before and received a decision</h2>
+
+      <p>You cannot apply online again. Call to start a new claim.</p>
+
+        <h3 class="govuk-heading-s">PIP new claims line</h3>
+        <p>Telephone: 0800 917 2222<br>
+        Textphone: 0800 917 7777</p>
+        <p><a href="#">Relay UK</a> (if you cannot hear or speak on the phone): 18001 then 0800 917 2222</p>
+        <p>British Sign Language (BSL) <a href="#">video relay service</a> if you’re on a computer - find out how to <a href="#">use the service on mobile or tablet</a></p>
+        <p>Calling from abroad: +44 191 218 7766 </p>
+        <p>Monday to Friday, 8am to 5pm</p>
+        <!-- Closed on public holidays.<br> -->
+        <p><a href="/call-charges">Find out about call charges</a></p>
+
+    </div>
+  </div>
+{% endblock %}

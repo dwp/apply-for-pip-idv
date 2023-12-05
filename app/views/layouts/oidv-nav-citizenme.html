@@ -1,0 +1,29 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "",
+  serviceName: "Apply for a disability benefit",
+  serviceUrl: "/",
+  containerClasses: "govuk-width-container",
+  navigation: [
+    {
+      href: "#1",
+      text: "Help and contact"
+    },
+    {
+      href: "#2",
+      text: "Sign out"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+tag: {
+  text: "prototype"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{% endblock %}

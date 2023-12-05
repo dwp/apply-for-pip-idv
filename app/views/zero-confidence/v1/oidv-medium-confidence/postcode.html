@@ -1,0 +1,46 @@
+{% extends "layouts/oidv-dth.html" %}
+
+{% set pageQuestion = "What is your postcode?" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        {{ pageQuestion }}
+      </h1>
+
+      <form class="form" action="hmrc-iv" method="post">
+
+        {{ govukInput({
+          label: {
+            text: "Postcode"
+          },
+          hint: {
+            text: "For example, AA3 1AB."
+          },
+          classes: "govuk-input--width-10",
+          id: "postcode",
+          name: "postcode"
+        }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

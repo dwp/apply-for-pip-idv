@@ -1,0 +1,43 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "We need you to register again for Apply for PIP" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p class="govuk-body">We're changing the way we manage PIP accounts. Your PIP application progress is saved.</p>
+
+      <h2 class="govuk-heading-m">What to do next</h2>
+
+      <p class="govuk-body">Register again to continue your saved application.</p>
+
+      <p class="govuk-body">You'll need to create a new password for Apply for PIP.</p>
+
+      {{ govukButton({
+        text: "Continue",
+        href: "register/start"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

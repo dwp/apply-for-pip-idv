@@ -1,0 +1,39 @@
+{% extends "layouts/oidv.html" %}
+
+{% block pageTitle %}
+We cannot confirm your identity
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    serviceName: "",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block serviceName %}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+        We cannot confirm your identity
+    </h1>
+
+    <p class="govuk-body">If you cannot give us details to confirm your identity, you can <a href="confirm-another-way">confirm your identity another way</a>.</p>
+    <p class="govuk-body">If you can give us details to confirm your identity, you can <a href="choose-2-items">go back and try again</a>.</p>
+
+{% endblock %}

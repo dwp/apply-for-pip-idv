@@ -1,0 +1,37 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "You are registered to Apply for PIP" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <h2 class="govuk-heading-m">If you've created an Apply for PIP account before</h2>
+
+      <p>Your PIP application progress is saved. We're changing the way you sign in to Apply for PIP. The password you just created is your new Apply for PIP password.</p>
+
+      <h2 class="govuk-heading-m">What to do next</h2>
+
+      <p><a href="../authentication/sign-in-2">Sign in to continue your PIP application</a>.</p>
+
+    </div>
+  </div>
+{% endblock %}

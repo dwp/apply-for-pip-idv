@@ -1,0 +1,50 @@
+{% extends "layouts/oidv.html" %}
+
+{% set pageQuestion = "Confirm your identity" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }}  – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    serviceName: "Confirm who you are",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        We need you to confirm your identity
+      </h1>
+
+      <p>We will ask you about items you may have, like your:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>UK passport</li>
+        <li>Payslips or P60</li>
+        <li>Self Assessment</li>
+        <li>Tax credits (optional Voice ID)</li>
+        <li>Credit record</li>
+      </ul>
+
+      <p>You will be able to choose how to confirm your identity.</p>
+
+      <p>We do this to protect you against fraud.</p>
+
+      {{ govukButton({
+        text: "Continue",
+        href: "choose-2-items"
+      }) }}
+
+      <p>
+        <a href="more-information">I do not have any of these items</a>
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

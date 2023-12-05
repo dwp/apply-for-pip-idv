@@ -1,0 +1,47 @@
+{% extends "layouts/oidv-dth.html" %}
+
+{% set pageQuestion = "Your registration was successful" %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>You’ve successfully registered for this service and can now sign in.</p>
+
+      <p>You will receive a confirmation email shortly.</p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+
+      <p>When you sign back in for the first time, you’ll be asked to enter the email and password you used to register for this service.</p>
+
+      <p>A code will be sent to the mobile phone number you gave us so we can confirm it is you.</p>
+
+      <p>You will then be taken to your service homepage.</p>
+
+      {{ govukButton({
+        text: "Continue to sign in",
+        href: "sign-in"
+      }) }}
+
+    </div>
+  </div>
+
+  <a class="usability-testing govuk-!-font-size-19" href="registration-email" target="_blank">Check email</a>
+{% endblock %}

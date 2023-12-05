@@ -1,0 +1,53 @@
+{% extends "layouts/_base.html" %}
+{% set phaseBanner = 'true' %}
+{% set languageToggle = 'true' %}
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+{% set title =  "Registration successful" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+        Your registration was successful
+    </h1>
+
+    <p class="govuk-body">
+        You’ve successfully registered for this service and can now sign in.
+    </p>
+
+    <p class="govuk-body">
+        You will receive a confirmation email shortly.
+    </p>
+
+    <h2 class="govuk-heading-m">
+    What happens next
+    </h2>
+
+    <p class="govuk-body">
+    When you sign back in for the first time, you’ll be asked to enter the email and password you used to register for this service.
+    </p>
+
+    <p class="govuk-body">
+    A code will be sent to the mobile phone number you gave us so we can confirm it is you.
+    </p>
+
+    <p class="govuk-body">
+    You will then be taken to your service homepage.
+    </p>
+
+
+    {{ govukButton({
+        text: "Continue to sign in",
+        href: "../authentication/sign-in-2"
+    }) }}
+
+    <p class="govuk-body">
+        <a class="govuk-link" href="../support/support-password">I need help</a>
+    </p>
+    </div>
+</div>
+{% endblock %}

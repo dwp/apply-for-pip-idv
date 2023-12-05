@@ -1,0 +1,44 @@
+
+
+  {% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+  {% block beforeContent %}
+    {% if phaseBanner == 'true' %}
+        {% include 'includes/phase-bannerz.njk' %}
+    {% endif %}
+
+    {% if backLink == 'true' %}
+        {% include 'includes/back-link.njk' %}
+    {% endif %}
+
+    {% if languageToggle == 'true' %}
+        {% include 'includes/language-toggle.njk' %}
+    {% endif %}
+{% endblock %}
+
+
+  {% block footer %}
+      {{ govukFooter({
+      meta: {
+          items: [
+          {
+              href: "https://dwpdigital.atlassian.net/l/cp/DtZU1V2h",
+              text: "Design decisions"
+          },
+          {
+              href: "#",
+              text: "Research insights"
+          },
+          {
+              href: "/manage-prototype",
+              text: "Manage your prototype"
+          },
+          {
+              href: "/manage-prototype/clear-data",
+              text: "Clear data"
+          }
+          ],
+          visuallyHiddenTitle: "Footer links"
+      }
+      }) }}
+  {% endblock %}

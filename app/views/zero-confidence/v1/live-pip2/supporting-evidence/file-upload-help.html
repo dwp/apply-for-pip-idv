@@ -1,0 +1,38 @@
+{% extends "layouts/oidv-nav.html" %}
+
+{% set pageQuestion = "How to take a photo of your evidence" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">How to take a photo of your evidence</h1>
+
+    <p>Make sure:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>you are in a well lit place</li>
+      <li>all of the document is in the image</li>
+      <li>you take the photo from above and not at an angle</li>
+      <li>the photo is not blurred</li>
+    </ul>
+
+    <a href="supporting-evidence-upload-1" class="govuk-button" data-module="govuk-button">Continue to upload</a>
+
+  </div><!-- govuk-grid-column-two-thirds -->
+</div><!-- govuk-grid-row -->
+{% endblock %}

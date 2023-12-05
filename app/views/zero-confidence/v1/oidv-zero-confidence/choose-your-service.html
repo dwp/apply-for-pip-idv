@@ -1,0 +1,38 @@
+{% extends "layouts/oidv-dth.html" %}
+
+{% set pageQuestion = "Choose the service you wish to access" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        {{ pageQuestion }}
+      </h1>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">Access to work</a></li>
+        <li><a href="sign-in">Personal independence payment (PIP)</a></li>
+        <li><a href="">Repay and manage my debt</a></li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        <a href="">I can't see my service on the list</a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layouts/oidv-nav.html" %}
+
+{% set pageQuestion = "Call us to confirm your identity" %}
+
+{% block pageTitle %}
+  {{ pageQuestion }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ pageQuestion }}
+      </h1>
+
+      <p>It’s important you confirm your identity so that we can pay you straight away if your claim is successful. We check everyone's identity to protect from fraud.</p>
+
+      <p>You’ll need to give some details about yourself, for example:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your name</li>
+        <li>your National Insurance number, if you have one (you can find this on letters about tax, pensions and benefits)</li>
+        <li>your date of birth</li>
+        <li>your address</li>
+      </ul>
+
+      <p>You’ll also need to answer some questions about yourself or events in your life, so that we can confirm your identity.</p>
+
+      <h2 class="govuk-heading-m">
+        Contact DWP
+      </h2>
+
+      <p>Telephone: 0800 171 2169</p>
+      <p>Textphone: 0800 121 4493</p>
+      <p><a href="https://www.relayuk.bt.com/">Relay UK</a> (if you cannot hear or speak on the phone): 18001 then 0800 171 2169</p>
+      <p><a href="https://connect.interpreterslive.co.uk/vrs?ilc=DWP">Video relay service</a> for British Sign Language (BSL) users - <a href="https://www.youtube.com/watch?v=oELNMfAvDxw">check you can use the service</a>.</p>
+      <p>Monday to Friday, 9am to 5pm.</p>
+      <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a>.</p>
+
+    </div>
+
+  </div>
+{% endblock %}
