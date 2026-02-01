@@ -27,6 +27,6 @@ workflow:
 
 include:
   - project: dwp/engineering/pipeline-solutions/gitlab/functions
-    ref: 6.0.8
+    ref: 6.2.7
     file:
       - functions/base-mr.gitlab-ci.yml
