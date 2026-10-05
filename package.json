@@ -19,7 +19,7 @@
     "express": "4.22.3",
     "govuk-frontend": "6.5.1",
     "govuk-prototype-kit": "13.20.5",
-    "hmrc-frontend": "7.35.0",
+    "hmrc-frontend": "7.38.0",
     "jquery": "4.0.0",
     "nhsapp-frontend": "5.3.0",
     "notifications-node-client": "8.5.0",
@@ -29,7 +29,7 @@
   "overrides": {
     "marked": "4.3.0",
     "form-data": "2.5.6",
-    "ws": "8.21.3",
+    "ws": "8.22.0",
     "uuid": "11.1.1"
   }
   
